@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #0e0e0e; /* Dark background */
+  font-family: 'Inter', Arial, sans-serif; /* Modern sans-serif font */
+  color: #ccc; /* Light text color */
+}
+
+/* Basic styling for the container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Soft shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Center the label and input */
+.upload-btn {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: transparent; /* Transparent button background */
+  color: #4fc3f7; /* Teal text color */
+  text-align: center;
+  border: 2px solid #4fc3f7; /* Teal border */
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  color: #32a1e5; /* Darker teal text on hover */
+  border-color: #32a1e5; /* Darker teal border on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Hide default file input */
+.file-input {
+  display: none;
+}
+
+/* Style the video player */
+#videoPlayer {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Custom video overlay */
+#videoPlayer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 100%); /* Gradient overlay */
+  z-index: 2;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Playback controls */
+#videoControls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.control-btn {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Darker semi-transparent white on hover */
+}
+
+.control-btn {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Darker semi-transparent white on hover */
+}
+
+#skipBackward, #skipForward {
+  display: flex;
+  align-items: center;
+}
+
+#skipBackward {
+  order: -1;
+}
+
+
+/* Footer styling */
+#footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8); /* Lighter footer text with transparency */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+
