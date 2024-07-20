@@ -1,4 +1,4 @@
-# Video Player Web App
+# Video Player Web App [#funProject](#)
 
 This project is a simple web application that allows users to upload and play video files directly in their web browser. It provides basic video playback controls such as play, pause, skip forward, and skip backward.
 
